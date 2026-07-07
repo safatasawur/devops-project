@@ -1,4 +1,4 @@
-print("Hello, DevOps!")
+print("Hello, DevOps! ver 2")
 
 name = "Safa"
 
