@@ -1,22 +1,12 @@
-name: My First CI Pipeline
+name: Test Workflow
 
 on:
   push:
-    branches:
-      - main
+  workflow_dispatch:
 
 jobs:
-  run-python:
+  test:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout Repository
-        uses: actions/checkout@v4
-
-      - name: Set up Python
-        uses: actions/setup-python@v5
-        with:
-          python-version: '3.13'
-
-      - name: Run Python Program
-        run: python devops.py
+      - run: echo "Hello from GitHub Actions!"
