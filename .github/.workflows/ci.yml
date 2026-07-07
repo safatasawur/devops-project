@@ -1,12 +1,13 @@
 name: Test Workflow
 
 on:
-  push:
   workflow_dispatch:
+  push:
 
 jobs:
-  test:
+  hello:
     runs-on: ubuntu-latest
 
     steps:
-      - run: echo "Hello from GitHub Actions!"
+      - name: Say Hello
+        run: echo "Hello GitHub Actions!"
