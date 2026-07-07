@@ -1,6 +1,5 @@
 from openpyxl import Workbook
 
-
 class GradeManager:
 
     def __init__(self):
