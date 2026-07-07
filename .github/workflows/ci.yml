@@ -11,3 +11,8 @@
 #     steps:
 #       - name: Say Hello
 #         run: echo "Hello GitHub Actions!"
+name: "Student Grade Manager"
+
+on:
+   workflow_dispatch:
+   push:
