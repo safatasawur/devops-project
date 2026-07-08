@@ -6,12 +6,12 @@
 
 # for i in range(1, 6):
 #     print("Pipeline Step", i)
-import requests
+# import requests
 
-city = "London"
+# city = "London"
 
-url = f"https://wttr.in/{city}?format=3"
+# url = f"https://wttr.in/{city}?format=3"
 
-response = requests.get(url)
+# response = requests.get(url)
 
-print(response.text)
+# print(response.text)
