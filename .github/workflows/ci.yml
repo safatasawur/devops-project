@@ -1,4 +1,3 @@
-
 name: "Student Grade Manager"
 
 on:
@@ -30,15 +29,5 @@ on:
          run: |
            pytest 
 
-
-          #  --maxfail=1 --disable-warnings -q
-
-# Upgrade pip to the latest version
-          #install dependencies from requirements.txt
-
-
-   #       pytest checks everything every file and function in the project and if any test fails it will stop the execution of the tests and show the error message.
-
-  #  | next few line are commands run them one after one
 
  
