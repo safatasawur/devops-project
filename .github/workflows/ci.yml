@@ -1,54 +1,13 @@
-# name: Test Workflow
+name: Test Workflow
 
-# on:
-#   workflow_dispatch:
-#   push:
+on:
+  workflow_dispatch:
+  push:
 
-# jobs:
-#   hello:
-#     runs-on: ubuntu-latest
+jobs:
+  hello:
+    runs-on: ubuntu-latest
 
 #     steps:
 #       - name: Say Hello
 #         run: echo "Hello GitHub Actions!"
-name: "Student Grade Manager"
-
-on:
-   
-   push:
-     branches:
-        - main
-   workflow_dispatch:
-
- jobs:
-   test:
-     runs-on: ubuntu-latest
-
-     steps:
-       - name: Checkout code
-         uses: actions/checkout@v3
-
-       - name: Set up Python
-         uses: actions/setup-python@v4
-         with:
-           python-version: '3.11'
-
-       - name: Install dependencies
-         run: |
-           python -m pip install --upgrade pip  
-           pip install -r requirements.txt
-
-       - name: Run tests
-         run: |
-           pytest 
-
-
-          #  --maxfail=1 --disable-warnings -q
-
-# Upgrade pip to the latest version
-          #install dependencies from requirements.txt
-
-
-   #       pytest checks everything every file and function in the project and if any test fails it will stop the execution of the tests and show the error message.
-
-   | next few line are commands run them one after one

@@ -27,10 +27,11 @@ class GradeManager:
             return "F"
 
     def export_to_excel(self, filename):
-
         workbook = Workbook()
 
         sheet = workbook.active
+        if sheet is None:
+            return
 
         sheet.append(["Student", "Average", "Grade"])
 
