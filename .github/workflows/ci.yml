@@ -1,14 +1,14 @@
-name: Test Workflow
+# name: Test Workflow
 
-on:
-  workflow_dispatch:
-  push:
+# on:
+#   workflow_dispatch:
+#   push:
 
-jobs:
-  hello:
-    runs-on: ubuntu-latest
+# jobs:
+#   hello:
+#     runs-on: ubuntu-latest
 
-<<<<<<< HEAD
+# <<<<<<< HEAD
 #     steps:
 #       - name: Say Hello
 #         run: echo "Hello GitHub Actions!"
@@ -52,19 +52,19 @@ on:
 
    #       pytest checks everything every file and function in the project and if any test fails it will stop the execution of the tests and show the error message.
 
-   | next few line are commands run them one after one
-=======
-    steps:
-      - uses: actions/checkout@v4
+  #  | next few line are commands run them one after one
 
-      - name: Set up Python
-        uses: actions/setup-python@v5
-        with:
-          python-version: "3.12"
+    # steps:
+    #   - uses: actions/checkout@v4
 
-      - name: Install dependencies
-        run: pip install -r requirements.txt
+    #   - name: Set up Python
+    #     uses: actions/setup-python@v5
+    #     with:
+    #       python-version: "3.12"
 
-      - name: Run application
-        run: python app.py
->>>>>>> 3861bd93808b8a74897a3ca2a1f539d2d1b8a618
+    #   - name: Install dependencies
+    #     run: pip install -r requirements.txt
+
+    #   - name: Run application
+    #     run: python app.py
+
