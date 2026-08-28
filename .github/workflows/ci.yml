@@ -3,7 +3,6 @@ name: Python CI/CD Security Pipeline
 on:
   push:
     branches:
-      - main
       - side
 
   pull_request:
