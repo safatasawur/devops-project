@@ -31,6 +31,7 @@
 #     assert manager.get_grade("John") == "F"
 
 import os
+
 from grades import GradeManager
 
 
