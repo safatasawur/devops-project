@@ -4,13 +4,13 @@ on:
   push:
     branches:
       - main
+      - side
 
   pull_request:
     branches:
       - main
 
 jobs:
-
   security-and-test:
 
     runs-on: ubuntu-latest
